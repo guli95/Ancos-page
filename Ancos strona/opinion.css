@@ -1,0 +1,23 @@
+.opinion h1{text-align: center;
+    font-size: 2rem;
+text-transform: uppercase;
+margin-top: 150px;
+margin-bottom: 50px;
+text-shadow: 1px 1px 2px #666666;}
+.opinion{display: flex;
+flex-direction: column;
+justify-content: space-between;}
+.o1, .o2{display: flex;
+justify-content: space-around;}
+
+.opinion img{width: 35%;
+margin-bottom: 70px;
+transition: .8s;}
+
+.o1 img:nth-of-type(1), .o2 img:nth-of-type(1){
+    transform: scale(0.5) translateX(-200%);}
+
+    .o1 img:nth-of-type(2), .o2 img:nth-of-type(2){
+        transform: scale(0.5) translateX(200%);
+    }
+ section.opinion .active2{transform: scale(1);}

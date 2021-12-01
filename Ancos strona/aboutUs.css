@@ -1,0 +1,60 @@
+.about{position: relative;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.about div.f1 div, .about div.f2 div, .about div.f3 div, .about div.f4 div{
+    display: flex;
+    align-content: center;
+    width: 100%;
+}
+
+.about h1{ text-align: center;
+font-size: 2rem;
+;
+padding: 5px 0;
+}
+.about>h1{text-shadow: 1px 1px 2px #666666;
+    text-align: center;
+    transform: translate(0);
+text-transform: uppercase;}
+
+.about div h1{ text-align: left ;
+padding-left: 10px;
+background-color: #03a2da ;
+width: 100%}
+
+.about div p{
+    font-size: 1.5rem;
+    padding-left: 20px;
+    padding-right: 20px;
+    align-self: center;
+}
+.about div img{
+    width: 20%;
+    height: 250px;
+    margin-left: 10px;
+}
+
+.about div.f1{
+    transform: translateX(100%);
+    transition: 1s;
+}
+.about div.f2{
+    transform: translateX( -105%);
+    transition: 1s;
+}
+.about div.f3{
+    transform: translateX(100%);
+    transition: 1s;
+}
+.about div.f4{
+    transform: translateX( -105%);
+    transition: 1s;
+}
+
+.about div.active{
+    transform: translateX(0);
+}

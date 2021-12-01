@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+  <!--Dwa pierwsze zawsze w tym miejscu 1. znacznik meta dotyczy kodowanie znaków 2. zancznik meta to informacje, ze strona jest przygotowana takze na urządzenia mobilne wersja (przegladarka dostosuje pewne paramtry wyświetlaczy urzadzeń mobilnych do tego)-->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!--  informacja dla przeglądarek Microsoft. Uruchom mnie w najwyższym twoim trybie (nie jest konieczne) -->
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <!--  Dwa bardzo ważne meta znaczniki z punktu widzenia dostępności strony i pozycjonowania -->
+  <title>Gabinet fizjoterapii ANCON</title>
+  <meta name="description" content="Gabinet Fizjoterapii ANCON Zaprasza na wizyty z dojazdem do pacjenta lub w gabinecie w Poznaniu. Profesjonalna rehabilitacja,
+  terapia manualna, masaż sportowy, masaż relaksacyjny">
+
+  <!-- Importowanie fontów - dodaj własne jeśli chcesz zamiast tych (tylko fonty, których użyjemy na stronie)-->
+  
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+
+  
+
+  <!-- style css, najlpiej umieszczone w innym folderze by nie zasmiecać katalogu głównego. W tym projekcie w katalogu css-->
+  <link rel="stylesheet" href='navi.css'>
+  <link rel="stylesheet" href='banner.css'>
+  <link rel="stylesheet" href='aboutUs.css'>
+  <link rel="stylesheet" href="scrollbar.css">
+  <link rel="stylesheet" href="priceList.css">
+  <link rel="stylesheet" href="opinion.css">
+  <link rel="stylesheet" href="contact.css">
+  <!--  Mało ważny meta znacznik (słowa kluczowe) z punktu widzenia pozycjonowania czy dostępności, ale jednak może się znaleźć na stronie -->
+  <meta name='fizjoterapia' content='fizjoterapia, masaż, rehabilitacja'>
+
+  <!--  Zaproszenie robotów wyszukiwarek do indeksowania (nie musimy dodawać, bo jest domyślnie, ale możemy) -->
+  <meta name='robots' content='index,follow'>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+
+  <!--   32 x 32 W tym przypadku w folderze głównym -->
+  <!-- <link rel="icon" href="favicon-32x32.png"> -->
+
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+  <!--  Dodaj też (dla starych przeglądarek) favicon.ico w rozmiarze 16x16 też w katalogu głównym -->
+
+  <!--  Meta tagi na na FB - wypłenij swoimi treściami -->
+
+  <meta name='url' content='http://nazwadomenty.pl'>
+  <meta property="og:title" content="Gabinet fizjoterapii ANCON" />
+  <meta property="og:image" content="http://nazwadomeny.pl/img/fbook.png" />
+  <!--Obrazek w rozmairze 1200px na 640px fb. Umeiść obrazke zgodnie ze ścieżką powyzej-->
+  <meta property="og:description" content="Projekt od podstaw do pierwszej pracy jako front-end developer" />
+  <meta property="og:type" content="article" />
+</head>
+
+<body>
+  <!-- scrollbar -->
+  <div id='progressbar'></div>
+  <div id='scrollPath'></div>
+  <!-- navigacja -->
+  <!-- #03a2da -->
+  <section class=" navigation">
+    <div class="menu">
+       <a href="#"><span>O mnie</span></a>
+       <a href="#"><span>Cennik</span></a>
+       <a href="#"><span>Opinie</span></a>
+        <a href="#"><span>Kontakt</span></a>
+       <a href="https://www.facebook.com/ANCON-Gabinet-Fizjoterapii-101052798095919/?ref=page_internal"><i class="fab fa-facebook"></i></a>
+       <span class="line"></span>
+    </div>
+   <!-- Przycisk -->
+   <i class="fas fa-home"></i>
+    
+</section>
+
+<!-- Banner -->
+<section class="banner">
+  <img src="img/Ancon_logo_2021.jpg" alt="banner1">
+  <h1></h1>
+<img src="img//banner1.jpg" alt="banner 2">
+<h1>Fizjoterapia i Rehabilitacja</h1>
+
+
+<img src="img//banner2.jpg" alt="banner 3">
+<h1>Masaż sportowy</h1>
+<img src="img//terapia manualna.jpg" alt="banner 4">
+<h1>Kinesiotaping</h1>
+<img src="img//masaż.jpg" alt="banner 5">
+<h1>Masaż relaksacyjny</h1>
+<div class="grey"></div>
+
+</section>
+<button class="onBanner"><a href="">
+  Dowiedz się więcej</a></button>
+
+  <!-- o mnie -->
+<section class="about">
+  <h1>O mnie</h1>
+
+  <div class="f1">
+    <h1>Wiedza i profesjonalizm</h1>
+    <div ><img src="img//marta.jpg" alt="mgr Marta Grygier">
+  <p>Jestem fizjoterapeutką z dyplomem magistra. Doświadczenie w dziedzinie fizjoterapii i rehabilitacji zdobywałam jako fizjoterapeutka piłkarzy klubu Warta Poznań. Swoją wiedzę i doświadczenie wykorzystuje również wykładając w Jakieś tam szkole</p></div></div>
+  <div  class="f2">
+    <h1>Najnowsze metody fizjoterapii i rehabilitacji</h1>
+    <div><img src="img//rozwój.jpeg" alt="rozwój">
+    <p>Przykładam olbrzymią wagę do rozszerzania swoich kompetencji poprzez ciągłe uczestnictwo w specjalistycznych szkoleniach zawodowych, konferencjach oraz wolontariatach, aby leczyć swoich klientów zgodnie z najnowszą wiedzą w świecie fizjoterapii i rehabilitacji</p></div></div>
+    <div  class="f3">
+      <h1>Dobry kontakt z pacjentami</h1>
+      <div><img src="img//teamwork.jpeg" alt="współpraca">
+      <p>Zdrowie i satysfakcja pacjentów są dla mnie najważniejsze, dlatego bardzo istotna dla mnie jest przyjazna atmosfera, dobry kontakt i współpraca z moimi pacjentami</p></div></div>
+      <div class="f4">
+        <h1>Mobilność</h1>
+        <div> <img src="img//dojazd.jpeg" alt="skuter">
+        <p>Oferuje usługi z dojazdem do pacjenta</p></div></div>
+
+      </section>
+
+      <!-- Cennik -->
+      <section class="prizeList">
+      <h1>Oferta</h1>
+      <div class="background">
+        <div class="container">
+          <div class="panel pricing-table">
+            
+            <div class="pricing-plan">
+            
+              <h2 class="pricing-header">MASAŻ RELAKSACYJNY</h2>
+              <p>Masaż relaksacyjny skupia się on na redukowaniu napięć mięśniowych, odprężaniu całego
+                ciała, eliminowaniu bólu pleców, szyi, karku, barków oraz poprawie krążenia i przepływu
+                limfy. Polega również na wyciszaniu emocjonalnym osoby masowanej.</p>
+            
+  
+              <a href="#/" class="pricing-button">Umów się na wizytę</a>
+            </div>
+            
+            <div class="pricing-plan">
+             
+              <h2 class="pricing-header">MASAŻ LECZNICZY</h2>
+              <p>Masaż leczniczy ma na celu oddziaływanie na tkanki pacjenta przez odpowiednie ugniatanie
+                oraz naciskanie dłońmi lub palcami. Jest dobrym rozwiązaniem przy pojawiających się bólach
+                kręgosłupa oraz mięśni.</p>
+             
+             
+              <a href="#/" class="pricing-button">Umów się na wizytę</a>
+            </div>
+            
+            <div class="pricing-plan">
+            
+              <h2 class="pricing-header">KINESIOTAPING</h2>
+              <p>Kinesiotaping często określany jako taping, to metoda plastrowania polegająca na naklejania
+                specjalnej taśmy na powierzchnię ciała.</p>
+            
+           
+              <a href="#/" class="pricing-button">Umów się na wizytę</a>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+     
+      <div class="background">
+        <div class="container">
+          <div class="panel pricing-table">
+            
+            <div class="pricing-plan">
+            
+              <h2 class="pricing-header">TERAPIA MANUALNA</h2>
+              <p>Terapia manualna to proces leczenia, w którym fizjoterapeuta, wykorzystując poszczególne
+                chwyty oraz manipulacje, stosuje specjalistyczne techniki diagnostyczno-lecznicze
+                ukierunkowane na wykrywanie i leczenie zaburzeń w obrębie stawów, więzadeł, mięśni oraz
+                wzorców ruchowych, wzorców postawy jak również oddechowych.</p>
+             
+         
+              <a href="#/" class="pricing-button">Umów się na wizytę</a>
+            </div>
+            
+            <div class="pricing-plan">
+            
+              <h2 class="pricing-header">DRENAŻ LIMFATYCZNY</h2>
+              <p>Drenaż limfatyczny jest jednym z działań fizjoterapeutycznych. Za pomocą rąk fizjoterapeuty
+                usprawniane jest krążenie limfy. Tym sposobem zapobiega się chorobom wynikającym z
+                obrzęków zastoinowych, chłonnych, onkotycznych oraz zapalnych.</p>
+              
+                <a href="#/" class="pricing-button">Umów się na wizytę</a>
+     
+            </div>
+            
+            <div class="pricing-plan">
+        
+              <h2 class="pricing-header">MASAŻ GŁĘBOKI TKANEK</h2>
+              <p>Masaż tkanek głębokich jest bezpieczną oraz nieinwazyjną terapią manualną, mającą na celu
+                zmniejszenie jak i rozluźnienie napięcia powstałego w mięśniach oraz przywrócenie
+                płynności ruchów pacjenta.</p>
+             
+              
+              <a href="#/" class="pricing-button">Umów się na wizytę</a>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- opinie -->
+<section class="opinion">
+<h1>Opinie</h1>
+<div class="o1">
+  <img src="img//opinia 1.png" alt="opinia pacjenta 1">
+  <img src="img//opinia2.png" alt="opinia pacjenta 2">
+</div>
+<div class="o2">
+  <img src="img//opinia3.png" alt="opinia pacjenta 3">
+  <img src="img//opinia4.png" alt="opinia pacjenta 4">
+</div>
+
+</section>
+
+
+<!-- contact -->
+<section class="contact">
+  <h1>skontaktuj się ze mną!</h1>
+  <div class="wrap clearfix">
+      <div class="socials">
+        <a href="mailto:anconpoznan@gmail.com"><div class="social "><img src="img/contact1.png" alt="ikona emaill"><span>anconpoznan@gmail.com</span></div></a>
+     <a href="tel:+48781176951"> <div class="social "><img src="img/contact2.png" alt="ikona telefonu"><span>+48 781176951</span></div></a>
+          <a href="https://www.facebook.com/ANCON-Gabinet-Fizjoterapii-101052798095919/?ref=page_internal"><div class="social "><img src="img/contact3.png" alt="ikona facebook"><span>AnconPoznań</span></div></a></div></div>
+      
+
+
+
+
+<script src="script.js"></script>
+ 
+</body>
+
+</html>
